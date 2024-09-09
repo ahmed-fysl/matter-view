@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+/*  font-family: "Sevillana", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* font-family: "Josefin Sans", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ========================header======================== */
+.view{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.back-video{
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+.top{
+    width: 100%;
+    color: white;
+    height: inherit;
+}
+.top .header{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.top .header img{
+    width: 100px;
+    height: 80px;
+}
+.top .header nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:30px ;
+    color: white;
+}
+.top .header nav a:hover{
+    text-shadow: 0 0 15px white ,0 0 15px white, 0 0 15px white ;
+}
+.top .counter{
+    width: 100%;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    bottom: 50%;
+    line-height: 50px;
+}
+.top .counter h1{ 
+    transition: 0.5s;
+    width: fit-content;
+}
+.top .counter h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    cursor: pointer;
+
+}
+.top .counter a{
+    text-decoration: none;
+    color: white;
+    width:200px;
+    height: max-content;
+    background-color: blue;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+.top .counter a:hover{
+    background-color: white;
+    color: blue;
+}
+/* ============misstion============= */
+.missition{
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(5, 174, 5, 0.78);
+    position: relative;
+}
+.missition .include{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    background-color: #fff;
+    backdrop-filter: sepia(60%);
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 5%;
+    border-radius: 40px;
+    box-shadow: 4px 4px 20px black;
+
+}
+.missition .include .card{
+    text-align: center;
+    width:30%;
+    box-shadow: 4px 4px 20px black;
+    height: 300px;
+    border-radius: 40px;
+    transition: 0.5s;
+    padding: 10px;
+}
+.missition .include .card h2{
+    color: red;
+    background-color: yellow;
+    width: 110px;
+    height: max-content;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.missition .include .card p{
+    font-size: 25px;
+    text-align: center;
+}
+.missition .include .card:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 4px 4px 20px black, 4px 4px 20px black, 4px 4px 20px black;
+
+}
+/* =============About Us=================== */
+.about-us{
+    width: 100%;
+    height: 90vh;
+}
+.about-us .about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 90%;
+}
+.about-us .about img{
+    width: 40%;
+    height: 70%;
+}
+.about-us .about .intro{
+    width: 40%;
+    height:300px ;
+    text-align: center;
+    box-shadow: 4px 4px 20px black ;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.about-us .about .intro h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    width: 150px;
+    margin: auto;
+    background-color: yellow;
+    color: red;
+    height: max-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+}
+.about-us .about .intro p{
+    font-size: 28px;
+}
+.about-us .about .intro:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 4px 4px 20px black, 4px 4px 20px black, 4px 4px 20px black;
+}
+/* =========contact============= */
+.contact{
+    height: 95vh;
+    width: 100%;
+    background-color: rgba(5, 174, 5, 0.78);
+    padding-top:20px ;
+}
+.contact h1{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    background-color: yellow;
+    color: red;
+    width: 150px;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.contact .complate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.contact .complate iframe{
+    width: 400px, fit-content;
+    height: 350px;
+}
+.contact .complate .cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .complate .cont .tel{
+    width: 240px;
+    height: 160px;
+    backdrop-filter: sepia(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    -webkit-text-stroke: 1px red;
+    color: transparent;
+    font-size: 20px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 27px;
+}
+/* ================footer========= */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+}
+footer .intro{
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 35%;
+    text-align: center;
+    line-height: 40px;
+}
+footer .intro p{
+    color: white;
+    font-size: 20px;
+}
+
+/* responsive of header */
+@media screen and (max-width:1200px){
+    .top .header{
+        height: 80px;
+        padding: 30px;
+    }
+    .top .header img{
+        width: 100px;
+        height: 80px;
+    }
+    .top .header nav a{
+        font-size: 20px;
+        margin-left:30px ;
+    }
+    .top .counter{
+        font-size: 26px;
+        line-height: 50px;
+    }
+    .top .counter a{
+        width: 200px;
+        border-radius: 20px;    
+    }
+/* ==============misstion================ */
+.missition .include{
+    gap: 70px;
+    border-radius: 40px;
+}
+.missition .include .card{
+    width: 40%;
+    height: 300px;
+    border-radius: 40px;
+}
+.missition .include .card h2{
+    width: 110px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.missition .include .card p{
+    font-size: 25px;
+}
+/* =============About Us=================== */
+
+.about-us .about{
+    padding: 25px;
+}
+.about-us .about img{
+    width: 40%;
+    height: 70%;
+}
+.about-us .about .intro{
+    height:330px ;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about-us .about .intro h2{
+    font-size: 30px;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.about-us .about .intro p{
+    font-size: 24px;
+}
+/* =========contact============= */
+.contact{
+    padding-top:20px ;
+}
+.contact h1{
+    font-size: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.contact .complate{
+    padding: 10px;
+}
+.contact .complate iframe{
+    width: 400px, fit-content;
+    height: 350px;
+}
+.contact .complate .cont .tel{
+    width: 160px;
+    height: 180px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 10px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    font-size: 18px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 23px;
+}
+/* ================footer========= */
+footer{
+    height: 200px;
+}
+footer .intro{
+    top: 40%;
+    bottom: 40%;
+    left: 35%;
+    line-height: 40px;
+}
+footer .intro p{
+    font-size: 17px;
+}
+}
+@media screen and (max-width:786px){
+    .top .header{
+        height: 70px;
+        padding: 20px;
+    }
+    .top .header img{
+        width: 80px;
+        height: 70px;
+    }
+    .top .header nav a{
+        font-size: 20px;
+        margin-left:30px ;
+    }
+    .top .counter{
+        font-size: 26px;
+        line-height: 50px;
+    }
+    .top .counter a{
+        width: 200px;
+        border-radius: 20px;    
+    }
+    /* ==============misstion================ */
+.missition .include{
+    gap: 50px;
+    border-radius: 40px;
+}
+.missition .include .card{
+    width: 40%;
+    height: 300px;
+    border-radius: 40px;
+    padding: 5px;
+}
+.missition .include .card h2{
+    width: 110px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+}
+.missition .include .card p{
+    font-size: 23px;
+}
+/* =============About Us=================== */
+.about-us .about{
+    padding: 23px;
+}
+.about-us .about img{
+    width: 40%;
+    height: 70%;
+}
+.about-us .about .intro{
+    height:330px ;
+    padding: 16px;
+    border-radius: 20px;
+}
+.about-us .about .intro h2{
+    font-size:25px;
+    width: 150px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+.about-us .about .intro p{
+    font-size: 20px;
+}
+/* =========contact============= */
+.contact{
+    padding-top:20px ;
+}
+.contact h1{
+    font-size: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.contact .complate{
+    padding: 10px;
+}
+.contact .complate iframe{
+    width: 280px;
+    height: 240px;
+}
+.contact .complate .cont .tel{
+    width: 140px;
+    height: 180px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 5px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    font-size: 18px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 20px;
+}
+/* ================footer========= */
+footer{
+    height: 200px;
+}
+footer .intro{
+    top: 40%;
+    bottom: 40%;
+    left: 30%;
+    line-height: 40px;
+}
+footer .intro p{
+    font-size: 15px;
+}
+}
+@media screen and (max-width:613px){
+    .top .header{
+        height: 70px;
+        padding: 15px;
+    }
+    .top .header img{
+        width: 80px;
+        height: 70px;
+    }
+    .top .header nav a{
+        font-size: 20px;
+        margin-left:10px ;
+    }
+    .top .counter{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .top .counter a{
+        width: 100px;
+        height:max-content;
+        border-radius: 20px;    
+    }
+        /* ==============misstion================ */
+.missition .include{
+    gap: 30px;
+    border-radius: 40px;
+}
+.missition .include .card{
+    width: 40%;
+    height: 300px;
+    border-radius: 40px;
+    padding: 5px;
+}
+.missition .include .card h2{
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+}
+.missition .include .card p{
+    font-size: 18px;
+}
+/* =============About Us=================== */
+.about-us .about{
+    padding: 20px;
+}
+.about-us .about img{
+    width: 40%;
+    height: 70%;
+}
+.about-us .about .intro{
+    height:330px ;
+    padding: 15px;
+    border-radius: 20px;
+}
+.about-us .about .intro h2{
+    font-size:20px;
+    width: 110px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+.about-us .about .intro p{
+    font-size: 18px;
+}
+/* =========contact============= */
+.contact{
+    padding-top:20px ;
+    height: 100vh;
+}
+.contact h1{
+    font-size: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.contact .complate{
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.contact .complate iframe{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+}
+.contact .complate .cont .tel{
+    width: 140px;
+    height: 180px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 5px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    font-size: 18px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 20px;
+}
+/* ================footer========= */
+footer{
+    height: 200px;
+}
+footer .intro{
+    top: 40%;
+    bottom: 40%;
+    left: 25%;
+    line-height: 30px;
+}
+footer .intro p{
+    font-size: 15px;
+}
+}
+@media screen and (max-width:480px){
+    .top .header{
+        height: 70px;
+        padding: 10px;
+    }
+    .top .header img{
+        width: 90px;
+        height: 70px;
+    }
+    .top .header nav a{
+        font-size: 20px;
+        margin-left:10px ;
+    }
+    .top .counter{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .top .counter a{
+        width: 100px;
+        height:max-content;
+        border-radius: 20px;    
+    }
+/* ==============misstion================ */
+.missition
+{
+    height: 750px;
+}
+.missition .include{
+    gap: 0px;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    height: 90%;
+}
+.missition .include .card{
+    width: 90%;
+    height: 250px;
+    border-radius: 40px;
+    padding: 5px;
+}
+.missition .include .card h2{
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+}
+.missition .include .card p{
+    font-size: 21px;
+}
+.missition .include .card:hover{
+    transform: translateY(-10px);
+}
+/* =============About Us=================== */
+.about-us{
+    height: 800px;
+}
+.about-us .about{
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about-us .about img{
+    width:100%;
+    height: 70%;
+}
+.about-us .about .intro{
+    height:260px ;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+.about-us .about .intro h2{
+    font-size:20px;
+    width: 110px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+.about-us .about .intro p{
+    font-size: 21px;
+}
+.about-us .about .intro:hover{
+    transform: translateY(-10px);
+}
+/* =========contact============= */
+.contact{
+    padding-top:20px ;
+    height: 750px;
+}
+.contact h1{
+    font-size: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.contact .complate{
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.contact .complate iframe{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+}
+.contact .complate .cont .tel{
+    width: 160px;
+    height: 180px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 5px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    font-size: 18px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 20px;
+}
+/* ================footer========= */
+footer{
+    height: 200px;
+}
+footer .intro{
+    top: 40%;
+    bottom: 40%;
+    left: 17%;
+    line-height: 30px;
+}
+footer .intro p{
+    font-size: 13px;
+}
+}
+@media screen and (max-width:390px){
+    .top .header{
+        height: 40px;
+        padding: 5px;
+    }
+    .top .header img{
+        width: 60px;
+        height: 40px;
+    }
+    .top .header nav a{
+        font-size: 15px;
+        margin-left:8px ;
+    }
+    .top .counter{
+        font-size: 15px;
+        line-height: 50px;
+    }
+    .top .counter a{
+        width: 80px;
+        height:max-content;
+        border-radius: 20px;    
+    }
+/* ==============misstion================ */
+.missition
+{
+    height: 750px;
+}
+.missition .include{
+    gap: 5px;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    height: 90%;
+}
+.missition .include .card{
+    width: 90%;
+    height: 250px;
+    border-radius: 40px;
+    padding: 5px;
+}
+.missition .include .card h2{
+    width: 100px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+}
+.missition .include .card p{
+    font-size: 18px;
+}
+.missition .include .card:hover{
+    transform: translateY(-10px);
+}
+/* =============About Us=================== */
+.about-us{
+    height: 900px;
+}
+.about-us .about{
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about-us .about img{
+    width:100%;
+    height: 70%;
+}
+.about-us .about .intro{
+    height:290px ;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+.about-us .about .intro h2{
+    font-size:20px;
+    width: 110px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+.about-us .about .intro p{
+    font-size: 21px;
+}
+.about-us .about .intro:hover{
+    transform: translateY(-10px);
+}
+/* =========contact============= */
+.contact{
+    padding-top:20px ;
+    height: 950px;
+}
+.contact h1{
+    font-size: 25px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.contact .complate{
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.contact .complate iframe{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+}
+.contact .complate .cont .tel{
+    width: 160px;
+    height: 180px;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 5px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.contact .complate .cont .tel i{
+    font-size: 18px;
+}
+.contact .complate .cont .tel h2{
+    font-size: 20px;
+}
+/* ================footer========= */
+footer{
+    height: 200px;
+}
+footer .intro{
+    top: 40%;
+    bottom: 40%;
+    left: 10%;
+    line-height: 30px;
+}
+footer .intro p{
+    font-size: 11px;
+}
+}
